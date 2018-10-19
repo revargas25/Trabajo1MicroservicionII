@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+    <form id="rendered-form">
+		<div class="rendered-form">
+			<div class="fb-text form-group field-text-1539710234651">
+				<label for="text-1539710234651" class="fb-text-label">Usuario</label>
+				<input type="text" class="form-control" name="text-1539710234651" id="text-1539710234651">
+			</div>
+			<div class="fb-text form-group field-text-1539710239921">
+				<label for="text-1539710239921" class="fb-text-label">Clave</label>
+				<input type="text" class="form-control" name="text-1539710239921" id="text-1539710239921">
+			</div>
+			<div class="fb-button form-group field-button-1539710251586">
+				<button type="button" class="btn btn-info" name="button-1539710251586" style="info" id="button-1539710251586">Ingresar</button>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+version: '2'
+services:
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: passw0rd
+      MYSQL_DATABASE: DockerTestDB
+      MYSQL_USER: adri
+      MYSQL_PASSWORD: passw0rd
+      
+    volumes:
+     - "db-data:/var/lib/mysql"
+     
+    networks:
+      - back-tier
+    dockerfile: Dockerfile
+  
+volumes:
+  db-data:
+
+networks:
+  back-tier:
